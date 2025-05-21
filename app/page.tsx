@@ -124,6 +124,7 @@ export default function Home() {
       {/* Show list section */}
       <section className={styles.showList}>
         <h2 className={styles.showTitle}>Popular Shows</h2>
+        <p className={styles.totalCount}>Total Shows Found: {totalShows}</p>
 
         {loading ? (
           <p>Loading shows...</p>

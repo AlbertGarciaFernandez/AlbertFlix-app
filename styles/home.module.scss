@@ -70,6 +70,14 @@
 // Show list title
 .showList {
   margin-top: 60px;
+
+  .totalCount {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $secondary-color;
+    margin-bottom: 20px;
+  }
 }
 
 .showTitle {
