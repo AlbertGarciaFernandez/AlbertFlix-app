@@ -72,7 +72,7 @@
 }
 
 .accordionHeader:hover {
-  background-color: adjust-color($secondary-color, $lightness: -10%);
+  background-color: color.adjust($secondary-color, $lightness: -10%);
   color: white;
 }
 
