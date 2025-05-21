@@ -57,9 +57,13 @@ export default function EpisodePage() {
 
         const epData = await res.json();
         setEpisode(epData);
-      } catch (err: any) {
-        console.error(err);
-        setError(err.message || "Failed to load episode.");
+      } catch (error: unknown) {
+        if (error instanceof Error) {
+          console.error(error);
+          setError(error.message);
+        } else {
+          setError("Failed to load episode.");
+        }
       } finally {
         setLoading(false);
       }

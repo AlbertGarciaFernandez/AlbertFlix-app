@@ -43,7 +43,7 @@ export default function Home() {
           );
           if (!res.ok) throw new Error("Failed to search shows");
           const data = await res.json();
-          const results = data.map((item: any) => item.show);
+          const results = data.map((item: { show: Show }) => item.show);
           setShows(results);
           setTotalShows(results.length);
         } else {
@@ -54,8 +54,12 @@ export default function Home() {
           setShows(data);
           setTotalShows(data.length);
         }
-      } catch (error: any) {
-        setError("Error fetching shows: " + error.message);
+      } catch (error: unknown) {
+        if (error instanceof Error) {
+          setError("Error fetching shows: " + error.message);
+        } else {
+          setError("An unexpected error occurred.");
+        }
       } finally {
         setLoading(false);
       }
