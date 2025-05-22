@@ -22,7 +22,7 @@ interface Props {
   episodes: Episode[];
   openSeason: number | null;
   setOpenSeason: (index: number | null) => void;
-  seasonRefs: React.MutableRefObject<(HTMLDivElement | null)[]>;
+  seasonRefs: useRef<(HTMLDivElement | null)[]>;
   fallbackImage?: string;
 }
 
@@ -47,7 +47,9 @@ export default function SeasonAccordion({
           <div
             key={season.id}
             className={styles.accordionItem}
-            ref={(el) => (seasonRefs.current[index] = el)}
+            ref={(el) => {
+              seasonRefs.current[index] = el;
+            }}
           >
             <button
               className={styles.accordionHeader}
