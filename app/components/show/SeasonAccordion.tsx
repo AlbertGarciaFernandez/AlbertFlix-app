@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RefObject } from "react";
 import styles from "../../../styles/SeasonAccordion.module.scss";
 
 interface Episode {
@@ -22,7 +23,8 @@ interface Props {
   episodes: Episode[];
   openSeason: number | null;
   setOpenSeason: (index: number | null) => void;
-  seasonRefs: useRef<(HTMLDivElement | null)[]>;
+  seasonRefs: RefObject<(HTMLDivElement | null)[]>;
+
   fallbackImage?: string;
 }
 
