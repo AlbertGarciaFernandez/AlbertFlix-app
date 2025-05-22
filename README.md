@@ -47,6 +47,8 @@ Minimum requirements:
 - Added back button to Home
 - Added animations and hover effects
 
+  Extra info: I've found it appropriate to separate some components for future reuse. In this case, it's the season accordion and the cast grid. Since this is a small app, it wouldn't be necessary in this case. But I've found it appropriate to implement it because this logic is typically used in larger apps.
+
 **Episode detail page**
 
 - Episode title
