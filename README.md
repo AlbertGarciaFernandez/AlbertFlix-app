@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 AlbertFlix — TV Show Explorer
 
-## Getting Started
+Welcome to **AlbertFlix**, a stylish and modern web app for browsing and discovering TV shows using the [TVmaze API](https://www.tvmaze.com/api). Explore seasons, episodes, cast, crew, and more — Netflix-style.
 
-First, run the development server:
+## Direct Link to the Webpage https://albert-flix-app-tbdw.vercel.app/
+
+## 🚀 Features
+
+- 🔍 Search TV shows by name
+- 🗂️ Browse detailed show pages with seasons, episodes, and metadata
+- 🎭 View cast and crew for each show
+- 📸 Image gallery and animations
+- 📱 Responsive, mobile-first layout with modern design
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js** 14+ (App Router)
+- **TypeScript** for type safety
+- **SASS Modules** for scoped styles
+- **TVmaze API** for data
+
+---
+
+## 📁 Why this project?
+
+This project was carried out as a technical test for a company selection process.
+
+Minimum requirements:
+
+**TV show page**
+
+- Show title
+- Show Description
+- Show cover image
+- Episode list. Every episode in the list should link to a details page for that specific episode
+
+**Additions to TV show page**
+
+- Show Cast, Crew & Gallery
+- Show more show info like: Genre, Status, Premeried, Languague, Type, Runtime, Schedule, Rating & Official Site
+- A collapsible has been created to open and close the episodes within each season.
+- The episodes have been inserted into each season
+- Season info display: Premiere, End Date and total Episodes
+- We display the show image when we don't receive an image from the episode.
+- Added back button to Home
+- Added animations and hover effects
+
+**Episode detail page**
+
+- Episode title
+- Episode Summary
+- Episode cover image
+
+**Additions to Episode detail page**
+
+- Show more episode info like: Season, Episode, Type, Airdate, Runtime, Rating
+- Add link to Visit Episode Page
+- Add button to Next or Previous Episode
+- Added back button to Home
+
+**More Additions**
+
+- Create a HomePage style streaming Page
+- SearchBar to search shows
+- Responsive Design
+- Add pagination
+- Deployed on Vercel
+
+**Ideas I would have liked to have added**
+
+- Some Test
+- Header
+- Automatic Carrousel Slider
+- Cast Page
+- On Gallery section : possibility of opening images in a modal
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/AlbertGarciaFernandez/AlbertFlix-app.git
+cd AlbertFlix-app
+npm install
+```
+
+### 2. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to start exploring.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build for Production
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Licensewwwwww
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the **MIT License**.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by **Albert**.
+
+> I hope you enjoy using the website as much as I enjoyed making it.
+
+> Enjoy streaming your favorite shows!
