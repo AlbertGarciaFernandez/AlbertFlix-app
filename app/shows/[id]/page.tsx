@@ -103,8 +103,9 @@ export default function ShowPage() {
 
         // Automatically open Season 1 if available
         const indexOfSeason1 = data._embedded.seasons.findIndex(
-          (season) => season.number === 1
+          (season: { number: number }) => season.number === 1
         );
+
         setOpenSeason(indexOfSeason1 >= 0 ? indexOfSeason1 : null);
       } catch (err) {
         console.error(err);
